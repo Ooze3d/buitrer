@@ -1,0 +1,31 @@
+.caja {
+    margin: 5px;
+    border: solid 1px darkgrey;
+    border-radius: 10px;
+}
+
+.cajasolida {
+    margin: 5px;
+    border: solid 6px white;
+    background-color: Khaki;
+    border-radius: 15px;
+    box-shadow: 3px 3px #AAA;
+}
+
+textarea {
+    resize: none;
+}
+
+.error {
+    font-weight: bold;
+    color: red;
+}
+
+.exito {
+    font-weight: bold;
+    color: green;
+}
+
+a {
+    cursor: pointer;
+}

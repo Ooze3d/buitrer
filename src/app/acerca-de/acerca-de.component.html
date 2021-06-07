@@ -1,0 +1,48 @@
+<div class="modal" id="acercade">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <h3 class="modal-title">Acerca del proyecto <strong>Buitrer</strong></h3>
+          <button type="button" class="close" data-dismiss="modal" routerLink="/">X</button>
+        </div>
+  
+        <div class="modal-body">
+          <p><strong>Nombre del alumno:</strong> Jose Antonio García López</p>
+          <p><strong>Curso:</strong> 2ºDAW (Grupo 1)</p>
+          <h3>Herramientas usadas: </h3>
+          <ul>
+            <li>Visual Studio Code</li>
+            <li>Angular 11 (Toda la funcionalidad front-end y las llamadas al servidor)</li>
+            <li>Google Firebase (Almacenamiento de datos)</li>
+            <li>Bootstrap 4 (Styling)</li>
+          </ul>
+          <h3>Funcionalidades de Angular usadas: </h3>
+          <ul>
+            <li><strong>String interpolation:</strong> Para todas las llamadas a propiedades, atributos y variables</li>
+            <li><strong>Pipes:</strong> Para el día y la hora en la lista de buits</li>
+            <li><strong>Property binding:</strong> Para anular el botón "Buitréalo!" cuando el contenido del buit está vacío</li>
+            <li><strong>Event binding:</strong> Todas las llamadas a click o input del formulario</li>
+            <li><strong>Two way databinding:</strong> Todos los [(ngModel)] en los inputs de todos los formularios</li>
+            <li><strong>Directivas:</strong> *ngIf en el menú, *ngFor en la lista de buits y ngSwitch en la barra izquierda</li>
+            <li><strong>Binding de padre a hijo (@Input):</strong> Lista de buits y paso de usuario a componente Menu</li>
+            <li><strong>Binding de hijo a padre: </strong> Logout, Login, Sección (para definir lo que mostramos con ngSwitch)</li>
+            <li><strong>Servicios:</strong> Objeto "nuevo buit" y lista de buits global para toda la aplicación</li>
+            <li><strong>Routing:</strong> Para esta ventana de dialogo (el resto de las secciones requerían data binding y se complicaba el routing)</li>
+            <li><strong>Validación de formularios:</strong> Control de campos vacíos y duplicado de usuarios</li>
+            <li><strong>Base de datos:</strong> Almacenamiento de usuarios y lista de buits en Firebase</li>
+          </ul>
+          <h3>Bibliografía: </h3>
+          <ul>
+            <li><strong>Apuntes del módulo</strong> Tanto Angular como Bootstrap (módulo de Diseño de Interfaces)</li>
+            <li>Curso <strong>"Angular, The Complete Guide"</strong>, impartido por Maximilian Schwarzmüller en Udemy</li>
+          </ul>
+        </div>
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" routerLink="/">Cerrar</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>

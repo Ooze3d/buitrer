@@ -1,0 +1,12 @@
+<div class="container-fluid">
+    <nav class="nav nav-pills mt-2">
+        <div class="navbar-brand">
+            Buitrer
+        </div>
+        <a *ngIf="logged===false" class="nav-link" (click)="cambiaModo('registro')" >Registro</a>
+        <a *ngIf="logged===false" class="nav-link" (click)="cambiaModo('login')">Login</a>
+        <a *ngIf="logged===false" class="nav-link" routerLink="/acercade" data-toggle="modal" data-target="#acercade">Acerca de</a>
+        <a *ngIf="logged===true" class="nav-link" (click)="logOut()">Logout</a>
+        <span *ngIf="usuario.getUsername()!='anonymous'" class="push-right">Hola, {{ usuario.getUsername() }}</span>
+    </nav>
+</div>

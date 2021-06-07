@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div id="manager" class="col-md-5">
+      <div class="row">
+        <div class="col-12">
+          <app-menu [usuarioMenu]="usuario" (menuEmitter)="onLogout($event)" (modoEmitter)="cambiaSeccion($event)"></app-menu> <!-- Pasamos el usuario actual al menu para que muestre el nombre -->
+        </div> <!-- Se que podría haber usado un servicio para el usuario, pero no habría tenido todos los tipos de data binding que pide el ejercicio-->
+      </div>
+      <router-outlet></router-outlet> <!-- Routing del cuadro de diálogo "Acerca de" -->
+      <div *ngIf="seccion==='registro' && login===false" class="row">
+        <div class="col-12 caja">
+          <app-registro (registroEmitter)="onRegistro($event)"></app-registro>
+        </div>
+      </div>
+      <div *ngIf="seccion==='login' && login===false" class="row">
+        <div class="col-12 caja">
+          <app-login (usuarioEmitter)="onLogin($event)"></app-login> <!-- Escuchamos el evento personalizado que hemos creado en app-login y lo capturamos en la propiedad usuario de este componente -->
+        </div>
+      </div>
+      <div *ngIf="seccion==='nuevo' && login===true" class="row">
+        <div class="col-12 caja">
+          <app-nuevo-buit [usuarioBuit]="usuario"></app-nuevo-buit>
+        </div>
+      </div>
+      <p class="error" *ngIf="error!=''">{{ error }}</p>
+      <p class="exito" *ngIf="exito!=''">{{ exito }}</p>
+    </div>
+    <div id="lista" class="col-md-7">
+      <div class="col-12 caja">
+        <app-lista-buits></app-lista-buits>
+      </div>
+    </div>
+  </div>
+</div>

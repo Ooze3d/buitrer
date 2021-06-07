@@ -1,0 +1,19 @@
+.titulo {
+    color: darkslateblue;
+    font-weight: bold;
+    font-size: small;
+}
+
+.cuerpo {
+
+}
+
+.datos {
+    font-size: small;
+    color: darkgrey;
+}
+
+.estadisticas {
+    font-size: smaller;
+    color: darkslateblue;
+}

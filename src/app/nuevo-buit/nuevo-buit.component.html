@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 mt-2 mb-2">
+            <form>
+                <h4>{{ usuario.getUsername() }}, escribe un nuevo buit</h4>
+                <div class="form-group"> 
+                    <label for="comentarios">Quedan {{ caracteres }} caracteres</label>
+                    <textarea class="form-control" rows="5" id="buit" name="buit" [(ngModel)]="contenidoBuit" (input)="calculaCaracteres()" maxlength="128"></textarea>
+                  </div> 
+                <button type="submit" class="btn btn-primary" (click)="enviarBuit()" [disabled]="contenidoBuit===''">Buitrealo!</button>
+            </form>
+            
+        </div>
+    </div>
+</div>

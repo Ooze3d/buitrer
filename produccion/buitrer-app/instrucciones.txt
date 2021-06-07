@@ -1,0 +1,10 @@
+NOTA: Esta es solo la versión de producción para subir algo a la propia tarea.
+El ejercicio completo está subido a la carpeta compartida.
+
+Para usar esta versión, solo hay que coger el contenido de esta carpeta y subirlo al raiz
+de un servidor (o cambiar el root en el fichero index.html). La aplicación está conectada
+a una base de datos realtime de FireBase en modo testaje y funciona directamente.
+
+Si quieres ver una versión funcional y ya subida a internet, solo tienes que ir a:
+
+www.sinproblema.net
